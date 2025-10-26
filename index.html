@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ZenGM Analyzer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>ZenGM Data Analyzer</h1>
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" accept=".json,.csv,.gz" required>
+    <button type="submit">Upload & Analyze</button>
+  </form>
+</body>
+</html>
